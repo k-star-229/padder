@@ -1,0 +1,30 @@
+{
+  "name": "kicklaunch",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build --no-cache",
+    "dev": "turbo run dev --no-cache --parallel --continue",
+    "local": "turbo run local --no-cache --parallel --continue",
+    "lint": "turbo run lint",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "format": "prettier --write",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "husky": "^7.0.0",
+    "prettier": "^2.5.1",
+    "turbo": "latest"
+  },
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "lint-staged": "^12.3.3"
+  }
+}

@@ -1,0 +1,11 @@
+{
+	"extends": "kl-tsconfig/nextjs.json",
+	"include": [
+		"next-env.d.ts",
+		"**/*.ts",
+		"**/*.tsx",
+		"../tenant/src/pages/vet-tech-clinic-app.tsx",
+		"src/components/atoms/index.tsx"
+	],
+	"exclude": ["node_modules"]
+}

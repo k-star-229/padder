@@ -1,0 +1,38 @@
+[
+	{
+		"name": "Will Knowles",
+		"profile": "",
+		"message": "Hey! How’s your dog? ∙",
+		"time": "1min"
+	},
+	{
+		"name": "Ryan Bond",
+		"profile": "svg/Ryan-Bond.svg",
+		"message": "Lets go out! ∙",
+		"time": "5h"
+	},
+	{
+		"name": "Sirena Paul",
+		"profile": "svg/Sirena-Paul.svg",
+		"message": "Hey! Long time no see ∙",
+		"time": "1min"
+	},
+	{
+		"name": "Matt Chapman",
+		"profile": "svg/Will-Knowles.svg",
+		"message": "You fed the dog? ∙",
+		"time": "6h"
+	},
+	{
+		"name": "Laura Pierce",
+		"profile": "svg/Ryan-Bond.svg",
+		"message": "How are you doing? ∙",
+		"time": "7h"
+	},
+	{
+		"name": "Hazel Reed",
+		"profile": "svg/Sirena-Paul.svg",
+		"message": "Hey! Long time no see ∙",
+		"time": "5h"
+	}
+]

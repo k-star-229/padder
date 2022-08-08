@@ -1,0 +1,298 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+:root {
+	--primary: #0e2f60;
+	--secondary: #fa6b43;
+	--secondary-100: #9d9d9d;
+	--white-100: #ffffff;
+	--dark-100: #000000;
+	--blue-200: #435dff;
+	--red-300: #ef4050;
+	--green-200: #1ded9d;
+	--gray-200: #c4c4c4;
+	--gray-100: rgba(232, 232, 232, 0.63);
+	--gray-300: #525a64;
+	--dust: #f1f4fa;
+	--red-50: #f9eaec;
+	--red-200: #eb5e6c;
+	--orange-400: #fb724c;
+	--orange-500: #f46700;
+	--gray-150: #b0b0b0;
+	--gray-50: #f5f5f5;
+	--orange-400-60: rgba(251, 114, 76, 0.6);
+	--orange-400-20: rgba(251, 114, 76, 0.2);
+	--purple-400: #c10097;
+	--purple-100: #110844;
+	--tomato: #e20404;
+	--btn-secondary: #7d7d7d;
+	--btn-primary: #0097a0;
+	--btn-success: #2c8635;
+	--btn-warning: #f29d38;
+	--btn-info: #4883ba;
+	--green-500: #22577a;
+	--gradient-background: linear-gradient(
+		90deg,
+		#ff7954 -0.66%,
+		rgba(217, 88, 76, 0.9) 28.87%,
+		rgba(188, 35, 182, 0.95) 73.15%,
+		#91008b 100.57%
+	);
+	--container-padding: 0rem 1.25rem;
+	--stylecontainer: 0rem 1rem 4rem;
+	--gray-90: #e5e5e5;
+	--green-50-75: rgba(0, 201, 20, 0.75);
+	--choco: #2b2b2b;
+	--vendor-secondary: #1273aa;
+	--vendor-secondary-disabled: #58a1dc;
+	font-size: 16px;
+	--dimmed-gray: #e0e0e0;
+	--z-index-modal: 99;
+}
+
+/* React-Calendar style */
+.react-calendar {
+	text-decoration: none !important;
+	border: 0 solid !important;
+	outline: none;
+	font-family: "Poppins";
+	position: relative;
+}
+.react-calendar::before {
+	position: absolute;
+	content: "Select Date";
+	left: 0px;
+	top: 9px;
+	font-size: 1.063rem;
+	line-height: 1.625rem;
+	font-weight: 500;
+}
+
+.react-calendar__tile--now {
+	background: none !important;
+}
+
+.react-calendar__navigation button {
+	min-width: 0 !important;
+}
+
+.react-calendar__navigation button svg {
+	height: 1.5rem !important;
+	width: 1.5rem !important;
+}
+
+.react-calendar__navigation {
+	margin-left: auto;
+	width: 50%;
+	text-align: right;
+	display: flex;
+	align-items: center;
+}
+
+.react-calendar__month-view__weekdays__weekday > abbr {
+	text-decoration: none !important;
+	border: none;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+	color: var(--orange-400);
+}
+
+.react-calendar__month-view__days__day--weekend {
+	color: black !important;
+}
+
+.react-calendar__month-view__days__day--neighboringMonth {
+	color: var(--gray-150);
+}
+
+.react-calendar__tile--active {
+	background: var(--orange-400) !important;
+	opacity: 0.7;
+}
+
+.react-calendar__tile--rangeStart,
+.react-calendar__tile--rangeEnd {
+	background: var(--orange-400) !important;
+	opacity: 1;
+	border-radius: 5px;
+}
+
+.react-calendar__month-view__days {
+	gap: 0;
+	align-content: flex-start;
+}
+
+.custom_bg {
+	background: #f1f1f1;
+	border-radius: 0.313rem;
+	font-size: 1.063rem;
+	padding: 0 0.5em;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+	display: none;
+}
+
+.appointments_pet__card {
+	border-radius: 1rem;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.appointments_pet__card__texts {
+	margin-left: 2em;
+}
+
+.pet_add__radio {
+	background: #ffffff;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+	padding: 1.5rem;
+	text-align: center;
+	width: 100%;
+	margin: 0 0.5rem;
+}
+
+.pet_add__radio__active {
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+	border: 1px solid black;
+}
+
+.pet_add__radio > input[type="radio"]:checked + label {
+	background: #000;
+	border-color: green;
+	color: white;
+}
+
+.pet_add__radio > input[type="radio"] {
+	display: none;
+}
+
+.pet_add__radio > input[type="radio"]:checked {
+	display: none;
+}
+
+.pet_add__radio:checked {
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+}
+
+.space-x__pets {
+	display: flex;
+	justify-content: space-around;
+	/* margin-top: 1rem; */
+}
+
+.pet_add__text {
+	background: #ffffff;
+	border: 2px solid #e5e5e5;
+	box-sizing: border-box;
+	border-radius: 4px;
+	padding: 0.6rem 0.4rem;
+	width: 100%;
+}
+
+.pet_add__button {
+	background: #ffffff;
+	border: 2px solid #e5e5e5;
+	box-sizing: border-box;
+	border-radius: 4px;
+	padding: 0.6rem 0.4rem;
+	width: 100%;
+}
+
+.pet_add__button__cancel {
+	background: #ffffff;
+	border: 2px solid #ff6666;
+	box-sizing: border-box;
+	border-radius: 4px;
+	padding: 0.6rem 0.4rem;
+	width: 100%;
+	margin-top: 0.5em;
+}
+
+.user_profile__service___card {
+	background: #ffffff;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 5px;
+	padding: 1em;
+	margin: 0.5em 0;
+}
+
+.user_profile__service___card__title {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 1rem;
+}
+
+.user_profile__service___card__description {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 300;
+	font-size: 0.6rem;
+}
+
+.user_profile__service_wrapper {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.user_profile__service___card__active {
+	border: 2px solid rgba(0, 0, 0, 1);
+}
+
+.user_profile__service__image {
+	min-height: 18em;
+}
+
+.apt_date {
+	ont-family: "Poppins";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+
+	color: #000000;
+}
+
+.apt_customer {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 800;
+	font-size: 12px;
+	color: #fd7853;
+}
+
+.apt_pet {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 300;
+	font-size: 12px;
+}
+
+.modal__wrapper {
+	background: white;
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	z-index: var(--z-index-modal);
+}
+
+.appointments_pet__card {
+	position: relative;
+}
+.center-text {
+	@apply absolute top-1/2 left-0 right-0 w-fit mx-auto -mt-9;
+}

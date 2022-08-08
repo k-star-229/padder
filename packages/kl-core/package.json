@@ -1,0 +1,36 @@
+{
+  "name": "kl-core",
+  "version": "0.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
+    "local": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
+    "lint": "TIMING=1 eslint src --fix",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^17.0.11",
+    "@types/styled-components": "^5.1.20",
+    "kl-config": "*",
+    "kl-tsconfig": "*",
+    "tsup": "^5.11.11",
+    "typescript": "^4.5.3"
+  },
+  "dependencies": {
+    "classnames": "^2.3.1",
+    "next": "^12.0.10",
+    "styled-components": "5.3.3",
+    "react": "^17.0.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "iris",
+  "version": "1.0.0",
+  "description": "Communication client for KL",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "lint": "eslint src/",
+    "test": "jest",
+    "build": "tsup src/* --format esm,cjs --dts --outDir=lib",
+    "dev": "tsup src/* --format esm,cjs --dts --watch --outDir=lib",
+    "local": "tsup src/* --format esm,cjs --dts --watch --outDir=lib",
+    "download-schema": "npx apollo service:download --endpoint=https://padder-api-production.up.railway.app/graphql graphql-schema.json",
+    "codegen": "apollo codegen:generate --localSchemaFile=graphql-schema.json --target=typescript --tagName=gql && cp -r __generated__ ./src/",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf lib"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.5.6",
+    "env-cmd": "^10.1.0",
+    "graphql": "^16.2.0",
+    "kl-config": "*",
+    "kl-tsconfig": "*",
+    "react": "^17.0.2",
+    "tsup": "^5.12.1",
+    "typescript": "^4.6.3"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.43",
+    "@types/react-select": "^5.0.1",
+    "@types/typescript": "^2.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "2.5.1"
+  }
+}
